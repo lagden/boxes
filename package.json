@@ -30,5 +30,8 @@
       "jade": "https://raw.githubusercontent.com/visionmedia/jade/1.7.0/runtime.js",
       "jquery": "http://code.jquery.com/jquery-2.1.0.js"
     }
+  },
+  "dependencies": {
+    "gsap": "^1.15.0"
   }
 }

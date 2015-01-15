@@ -11,15 +11,19 @@ define [
     constructor: (container, options) ->
       @container = $ container
       @itens = @container.find '> .item'
-      # @itens.css 'position': 'absolute'
 
     redPill: (i) ->
       @itens[i].style.position = 'absolute'
       @itens[i].style.backgroundColor = 'green'
-      TM.to @itens[i], 2,
+
+      TM.set @itens[i],
         transformPerspective: 600
-        x: 50 #parseInt (Math.random() * 1000), 10
-        y: 0 #parseInt (Math.random() * 1000), 10
+
+      TM.to @itens[i], 2,
+        x: parseInt (Math.random() * 1000), 10
+        y: parseInt (Math.random() * 1000), 10
         z: 0
+
+      return
 
   return WhatIsMatrix

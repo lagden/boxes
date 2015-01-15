@@ -8,8 +8,6 @@ html
     script(src='/js/lib/require.js', data-main='/js/app', async=true)
   body
     .container
-      .list
         - for (var x = 0; x < 20; x++)
           - var d = parseInt((Math.random() * 10).toString().split('.')[0], 10) % 2
-          div(class= d ? 'content item' : 'content item item_double' )
-            .bar #{x}
+          div(class= d ? 'item' : 'item item_double' ) #{x}

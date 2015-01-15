@@ -12,10 +12,12 @@ define(['TweenMax', 'jquery'], function(TM, $) {
     WhatIsMatrix.prototype.redPill = function(i) {
       this.itens[i].style.position = 'absolute';
       this.itens[i].style.backgroundColor = 'green';
-      return TM.to(this.itens[i], 2, {
-        transformPerspective: 600,
-        x: 50,
-        y: 0,
+      TM.set(this.itens[i], {
+        transformPerspective: 600
+      });
+      TM.to(this.itens[i], 2, {
+        x: parseInt(Math.random() * 1000, 10),
+        y: parseInt(Math.random() * 1000, 10),
         z: 0
       });
     };
