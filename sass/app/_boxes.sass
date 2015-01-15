@@ -1,0 +1,69 @@
+$itemSize: 40
+$itemMargin: 5
+
+.list
+  // position: relative
+  // width: 50%
+  padding: 5px
+  background: blue
+
+  width: 100%
+  min-width: 150px
+  clear: both
+
+  // &:after
+  //   content: ""
+  //   display: table
+  //   clear: both
+
+.item
+  background: red
+  // width: #{$itemSize}px
+  // height: #{$itemSize}px
+  // margin: #{$itemMargin}px
+  // float: left
+
+// .item_double
+//   $doubleSize: $itemSize * 2 + $itemMargin * 2
+//   width: #{$doubleSize}px
+//   height: #{$doubleSize}px
+
+.container
+  margin: 25px
+
+
+// Component Critical Styles - you must include these!
+.contentPlacerContainer .content
+  width: 100%
+  height: 100%
+  overflow: hidden
+  background-repeat: no-repeat
+  background-size: cover
+  display: block
+  position: relative
+
+.contentPlacerContainer .bar
+  position: absolute
+  bottom: 0
+  height: 50px
+  background-color: rgba(30,30,30, 0.8)
+  width: 100%
+  color: #ffffff
+
+.contentPlacerContainer
+  position: relative
+  margin: 0
+  padding: 0
+
+.contentPlacerContainer .contentPlacerElement
+  position: absolute
+  overflow: hidden
+  opacity: 1
+  background-color: transparent
+
+.contentPlacerElement.hidden
+  opacity: 0
+  transform: scale(0, 0)
+
+.contentPlacerContainer .transition
+  transition: all 500ms ease-in-out

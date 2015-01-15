@@ -1,0 +1,26 @@
+{
+  "arrow_spacing": {
+    "level": "error"
+  },
+  "indentation": {
+    "level": "error",
+    "value": 2
+  },
+  "no_backticks": {
+    "level": "ignore"
+  },
+  "cyclomatic_complexity": {
+    "level": "ignore"
+  },
+  "line_endings": {
+    "value": "unix",
+    "level": "error"
+  },
+  "space_operators": {
+    "level": "error"
+  },
+  "max_line_length": {
+    "value": 120,
+    "level": "error"
+  }
+}
